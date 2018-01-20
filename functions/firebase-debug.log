@@ -1,0 +1,48 @@
+[debug] [2018-01-16T15:41:35.912Z] ----------------------------------------------------------------------
+[debug] [2018-01-16T15:41:35.915Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\My Document\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-01-16T15:41:35.915Z] CLI Version:   3.16.0
+[debug] [2018-01-16T15:41:35.915Z] Platform:      win32
+[debug] [2018-01-16T15:41:35.916Z] Node Version:  v8.9.1
+[debug] [2018-01-16T15:41:35.916Z] Time:          Tue Jan 16 2018 21:11:35 GMT+0530 (India Standard Time)
+[debug] [2018-01-16T15:41:35.916Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-16T15:41:35.930Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-16T15:41:35.931Z] > authorizing via signed-in user
+[debug] [2018-01-16T15:41:35.933Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/awesome-places-1515913378197  
+  
+ Tue Jan 16 2018 21:11:35 GMT+0530 (India Standard Time)
+[debug] [2018-01-16T15:41:37.118Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T15:41:37.119Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/awesome-places-1515913378197/tokens  
+  
+ Tue Jan 16 2018 21:11:37 GMT+0530 (India Standard Time)
+[debug] [2018-01-16T15:41:38.062Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'awesome-places-1515913378197'...
+[info] 
+[info] i  deploying functions
+[debug] [2018-01-16T15:41:39.360Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.5.2",
+    "cors": "^2.8.4",
+    "firebase-admin": "~5.5.1",
+    "firebase-functions": "^0.7.1",
+    "uuid-v4": "^0.1.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-01-16T15:41:39.363Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/awesome-places-1515913378197?view=CONSUMER_VIEW  
+  
+ Tue Jan 16 2018 21:11:39 GMT+0530 (India Standard Time)
+[debug] [2018-01-16T15:41:39.364Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/awesome-places-1515913378197?view=CONSUMER_VIEW  
+  
+ Tue Jan 16 2018 21:11:39 GMT+0530 (India Standard Time)
